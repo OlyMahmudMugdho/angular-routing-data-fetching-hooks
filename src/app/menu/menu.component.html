@@ -1,17 +1,22 @@
-<header class="bg-gray-800">
-  <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-    <a href="#" class="text-white font-bold text-xl">Your Logo</a>
-    <nav id="navMenu" class="hidden md:flex space-x-4">
-      <a routerLink="/" class="text-white hover:text-gray-400 px-3 py-2 rounded">Home</a>
-      <a routerLink="/about" class="text-white hover:text-gray-400 px-3 py-2 rounded">About</a>
-      <a routerLink="/todos" class="text-white hover:text-gray-400 px-3 py-2 rounded">Todos</a>
-    </nav>
-    <button id="menuBtn" class="md:hidden focus:outline-none text-white hover:text-gray-400">
-      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z" />
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-      </svg>
-    </button>
+<nav class="bg-gray-800 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-white text-lg font-semibold">MyApp</div>
+    <div class="hidden md:flex space-x-4">
+      <a routerLink="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+      <a routerLink="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+      <a routerLink="/todos" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Todos</a>
+    </div>
+    <div class="md:hidden">
+      <button id="menuBtn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
   </div>
-</header>
+  <div id="navMenu" class="md:hidden hidden">
+    <a routerLink="/" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Home</a>
+    <a routerLink="/about" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">About</a>
+    <a routerLink="/todos" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Todos</a>
+  </div>
+</nav>

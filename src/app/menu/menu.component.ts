@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import {RouterLink} from "@angular/router";
 
 @Component({
@@ -11,5 +11,13 @@ import {RouterLink} from "@angular/router";
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+  ngAfterViewInit(): void {
+    const menuBtn: HTMLElement = document.getElementById('menuBtn') as HTMLElement;
+    const navMenu: HTMLElement = document.getElementById('navMenu') as HTMLElement;
+
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  }
 
 }
