@@ -1,2 +1,6 @@
 <h2>Todos</h2>
-<h3>{{ todos.title }}</h3>
+<ul>
+  <li *ngFor="let todo of todos">
+    <h1>{{ todo.title }}</h1>
+  </li>
+</ul>
