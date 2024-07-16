@@ -12,4 +12,9 @@ import {ChildComponent} from "../child/child.component";
 })
 export class ParentComponent {
   messageFromParent:string = "This is a message from parent";
+  mesageFromChild: string | undefined;
+
+  recieveMessage($event: string){
+    this.mesageFromChild = $event;
+  }
 }

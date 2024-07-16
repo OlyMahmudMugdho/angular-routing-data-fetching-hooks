@@ -1,1 +1,7 @@
-<app-child [message]="messageFromParent"></app-child>
+<p>
+  {{ mesageFromChild }}
+</p>
+<app-child
+  [message]="messageFromParent"
+  (messageEvent)="recieveMessage($event)"
+></app-child>
