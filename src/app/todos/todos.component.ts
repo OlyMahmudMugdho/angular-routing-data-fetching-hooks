@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {DataService} from "../service/data.service";
+import {DataService} from "../service/data/data.service";
 import {data} from "autoprefixer";
 import {NgForOf} from "@angular/common";
 
