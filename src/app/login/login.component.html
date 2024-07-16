@@ -1,6 +1,14 @@
-<div class="p-5">
+<div *ngIf="!loggedIn" class="p-5">
   <p>click the button to log in</p>
   <button (click)="doLogin()" class="btn bg-amber-300 hover:bg-amber-200 px-4 py-2 rounded">
     Log-in
   </button>
 </div>
+<div *ngIf="loggedIn" class="p-5">
+  <p>click the button to log out</p>
+  <button (click)="doLogOut()" class="btn text-white bg-red-500 hover:bg-red-300 px-4 py-2 rounded">
+    Log-out
+  </button>
+</div>
+
+
